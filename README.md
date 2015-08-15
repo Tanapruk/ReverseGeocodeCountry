@@ -22,7 +22,8 @@ String countryName = GeocodeListBuilder.getCountryName(context, latitude, longit
 
 ## Sample App
 
-uploading to play store. links later.
+
+[Reverse Geocode Country on Play Store](https://play.google.com/store/apps/details?id=com.tanapruk.reversegeocodecountry)
 
 ## Attribution
 The code here are combine from:
@@ -38,7 +39,7 @@ This module helps locate a given latitude and longitude whether it is in a polyg
 The MIT License (MIT)
 
 Copyright (c) 2015 Tanapruk Tangphianphan
-
+```
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
@@ -56,3 +57,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+```
