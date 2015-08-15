@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Reverse Geocode Country</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="message_input">Input Your Latitude and Longitude</string>
+    <string name="latitude">Latitude:</string>
+    <string name="longitude">Longitude:</string>
+    <string name="message_hint_point">000.000000</string>
+    <string name="find">Find</string>
+    <string name="message_result">Result</string>
+    <string name="message_country_id">Country ID:</string>
+    <string name="message_country_name">Country Name:</string>
+
+</resources>
