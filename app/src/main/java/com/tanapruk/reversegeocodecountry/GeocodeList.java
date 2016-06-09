@@ -44,48 +44,30 @@ public class GeocodeList {
     }
 
     Geocode getGeocode(double latitude, double longitude) {
-
-
         Point currentPoint = new Point((float) latitude, (float) longitude);
-
-
         for (int i = 0; i < geocodeList.size(); i++) {
-
             Geocode geocode = geocodeList.get(i);
-
             List<PolygonSet> polygonSetList = geocode.getPolygonSetList();
-
             for (int j = 0; j < polygonSetList.size(); j++) {
-
                 PolygonSet polygonSet = polygonSetList.get(j);
-
                 List<LocationPoint> polygonList = polygonSet.getPolygonList();
-
                 Polygon.Builder polygonBuilder = new Polygon.Builder();
                 for (int k = 0; k < polygonList.size(); k++) {
                     LocationPoint locationPoint = polygonList.get(k);
                     polygonBuilder.addVertex(new Point((float) locationPoint.getLatitude(), (float) locationPoint.getLongitude()));
                 }
-
                 Polygon polygon = polygonBuilder.build();
-
                 if (polygon.contains(currentPoint)) {
                     return geocode;
                 }
-
             }
         }
-
         Log.e("Check", "Your latitude and longitude doesn't match anywhere on earth.");
-
         Geocode geocode = new Geocode();
         geocode.setId("No match found.");
         geocode.setName("No match found");
         return geocode;
-
     }
-
-
 
     private class Geocode {
         String id;
